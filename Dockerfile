@@ -7,7 +7,6 @@ RUN addgroup spfx &&\
 ENV NPM_CONFIG_PREFIX=/home/spfx/.npm-global
 ENV PATH=/home/spfx/.npm-global/bin:$PATH
 RUN npm i -g gulp@3.9.1 yo@3.1.1 @microsoft/generator-sharepoint@1.4.1
-RUN npm i gulp@3.9.1
 RUN mkdir /home/spfx/app &&\
     chown -R spfx:spfx /home/spfx
 EXPOSE 5432 4321 35729
